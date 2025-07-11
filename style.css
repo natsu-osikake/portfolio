@@ -1,0 +1,93 @@
+/* 画像 */
+portfolio/ ├─ index.html ← ポートフォリオのHTMLファイル └─ images/ ├─ kakeibo.jpg └─ youtube.jpg
+
+/* ベース全体設定 */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background: #f0f4f8;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* ヘッダー */
+header {
+  background: linear-gradient(135deg, #74b9ff, #a29bfe);
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+/* コンテナ */
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* カードスタイル */
+.card {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* カード内の画像 */
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+/* リンク */
+a {
+  color: #0984e3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* フッター */
+footer {
+  text-align: center;
+  padding: 24px;
+  color: #888;
+  font-size: 0.85rem;
+}
+
+/* モバイル対応 */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    padding: 16px;
+  }
+
+  /* アイコン */
+  .icon {
+    margin-right: 8px;
+    color: #0077cc;
+  }
+}
