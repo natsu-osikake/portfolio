@@ -6,13 +6,18 @@
 <head>
   <meta charset="UTF-8">
   <title>ポートフォリオ</title>
-  <!-- Bootstrap CDN -->
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Font Awesome CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+  <!-- 自分のCSS（上書き用） -->
   <link rel="stylesheet" href="style.css">
-  <!-- 自作CSSはBootstrapの後に！ -->
+  <!-- 背景色指示 -->
+  <style>
+    body {
+      background-color: #f5fffa !important;
+    }
+  </style>
 
 </head>
 
@@ -74,78 +79,78 @@
         <li><a href="https://youtube.com/shorts/3PxzjdhN4w8" target="_blank">▶ おしかけ的【水曜どうでしょう】名セリフ4選</a></li>
       </ul>
     </div>
-  </div>
 
-  <!-- スキル紹介 -->
-  <!-- ソフトウェアスキル -->
-  <div class="card p-4 mb-4">
-    <h2><i class="fa-solid fa-laptop-code"></i> ソフトウェアスキル</h2>
+    <!-- スキル紹介 -->
+    <!-- ソフトウェアスキル -->
+    <div class="card p-4 mb-4">
+      <h2><i class="fa-solid fa-laptop-code"></i> ソフトウェアスキル</h2>
 
-    <div class="mb-3">
-      <label><strong>Excel</strong><br>データ入力、基本的な表作成、四則演算、SUM関数、シート操作（表示固定・セル結合など）</label>
-      <div class="progress">
-        <div class="progress-bar bg-success" style="width: 70%;">日常的に使用</div>
+      <div class="mb-3">
+        <label><strong>Excel</strong><br>データ入力、基本的な表作成、四則演算、SUM関数、シート操作（表示固定・セル結合など）</label>
+        <div class="progress">
+          <div class="progress-bar bg-success" style="width: 70%;">日常的に使用</div>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label><strong>Word</strong><br>文字入力、フォント変更、印刷設定、表作成、画像挿入など基本操作</label>
+        <div class="progress">
+          <div class="progress-bar bg-success" style="width: 70%;">日常的に使用</div>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label><strong>PowerPoint</strong><br>スライド作成、フォント調整、画像挿入などプレゼン資料の基本操作</label>
+        <div class="progress">
+          <div class="progress-bar bg-success" style="width: 65%;">資料作成経験あり</div>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label><strong>Premiere Pro</strong><br>カット、BGM、テロップなどの基本編集操作</label>
+        <div class="progress">
+          <div class="progress-bar bg-info" style="width: 50%;">基本操作が可能</div>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label><strong>Photoshop</strong><br>色味補正、モザイク処理、トリミングなど基本的な画像編集</label>
+        <div class="progress">
+          <div class="progress-bar bg-info" style="width: 50%;">基本操作が可能</div>
+        </div>
       </div>
     </div>
 
-    <div class="mb-3">
-      <label><strong>Word</strong><br>文字入力、フォント変更、印刷設定、表作成、画像挿入など基本操作</label>
-      <div class="progress">
-        <div class="progress-bar bg-success" style="width: 70%;">日常的に使用</div>
+    <!-- プログラミングスキル -->
+    <div class="card p-4 mb-4">
+      <h2><i class="fa-solid fa-screwdriver-wrench"></i> プログラミングスキル</h2>
+
+      <div class="mb-3">
+        <label><strong>HTML / CSS</strong>（基礎的なコーディング・レイアウト調整）<br>スキルレベル：★★★☆☆</label>
+        <div class="progress">
+          <div class="progress-bar bg-success" style="width: 70%;">中級</div>
+        </div>
       </div>
-    </div>
 
-    <div class="mb-3">
-      <label><strong>PowerPoint</strong><br>スライド作成、フォント調整、画像挿入などプレゼン資料の基本操作</label>
-      <div class="progress">
-        <div class="progress-bar bg-success" style="width: 65%;">資料作成経験あり</div>
+      <div class="mb-3">
+        <label><strong>PHP / MySQL</strong>（フォーム・DB連携・簡単なCRUD処理）<br>スキルレベル：★★☆☆☆</label>
+        <div class="progress">
+          <div class="progress-bar bg-info" style="width: 50%;">初級〜中級</div>
+        </div>
       </div>
-    </div>
 
-    <div class="mb-3">
-      <label><strong>Premiere Pro</strong><br>カット、BGM、テロップなどの基本編集操作</label>
-      <div class="progress">
-        <div class="progress-bar bg-info" style="width: 50%;">基本操作が可能</div>
+      <div class="mb-3">
+        <label><strong>Git / GitHub</strong>（バージョン管理、push/pull、Pages公開）<br>スキルレベル：★★★☆☆</label>
+        <div class="progress">
+          <div class="progress-bar bg-warning" style="width: 60%;">習得中</div>
+        </div>
       </div>
-    </div>
 
-    <div class="mb-3">
-      <label><strong>Photoshop</strong><br>色味補正、モザイク処理、トリミングなど基本的な画像編集</label>
-      <div class="progress">
-        <div class="progress-bar bg-info" style="width: 50%;">基本操作が可能</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- プログラミングスキル -->
-  <div class="card p-4 mb-4">
-    <h2><i class="fa-solid fa-screwdriver-wrench"></i> プログラミングスキル</h2>
-
-    <div class="mb-3">
-      <label><strong>HTML / CSS</strong>（基礎的なコーディング・レイアウト調整）<br>スキルレベル：★★★☆☆</label>
-      <div class="progress">
-        <div class="progress-bar bg-success" style="width: 70%;">中級</div>
-      </div>
-    </div>
-
-    <div class="mb-3">
-      <label><strong>PHP / MySQL</strong>（フォーム・DB連携・簡単なCRUD処理）<br>スキルレベル：★★☆☆☆</label>
-      <div class="progress">
-        <div class="progress-bar bg-info" style="width: 50%;">初級〜中級</div>
-      </div>
-    </div>
-
-    <div class="mb-3">
-      <label><strong>Git / GitHub</strong>（バージョン管理、push/pull、Pages公開）<br>スキルレベル：★★★☆☆</label>
-      <div class="progress">
-        <div class="progress-bar bg-warning" style="width: 60%;">習得中</div>
-      </div>
-    </div>
-
-    <div class="mb-3">
-      <label><strong>動画編集（Clipchamp）</strong>（構成・カット・字幕・BGM）<br>スキルレベル：★★★☆☆</label>
-      <div class="progress">
-        <div class="progress-bar bg-primary" style="width: 80%;">中級</div>
+      <div class="mb-3">
+        <label><strong>動画編集（Clipchamp）</strong>（構成・カット・字幕・BGM）<br>スキルレベル：★★★☆☆</label>
+        <div class="progress">
+          <div class="progress-bar bg-primary" style="width: 80%;">中級</div>
+        </div>
       </div>
     </div>
   </div>
