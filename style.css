@@ -8,20 +8,10 @@ body {
   margin: 0;
   padding: 0;
   color: #333;
-}
+  font-size: 18px;
 
-/* ヘッダー */
-header {
-  background: linear-gradient(135deg, #74b9ff, #a29bfe);
-  color: white;
-  text-align: center;
-  padding: 30px 15px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-header h1 {
-  margin: 0;
-  font-size: 2rem;
+  /* ★ 全体の文字サイズをやや大きく */
+  line-height: 1.6;
 }
 
 /* コンテナ */
@@ -41,11 +31,25 @@ header h1 {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
   padding: 24px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  min-height: 300px;
+
+  /* ★ 最低高さを統一 */
+  font-size: 1.05rem;
+  /* ★ カード内文字も少し大きく */
 }
 
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+/* ヘッダー */
+header {
+  background: linear-gradient(135deg, #74b9ff, #a29bfe);
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
 }
 
 /* カード内の画像 */
@@ -61,6 +65,7 @@ header h1 {
 a {
   color: #0984e3;
   text-decoration: none;
+  font-weight: bold;
 }
 
 a:hover {
@@ -72,22 +77,34 @@ footer {
   text-align: center;
   padding: 24px;
   color: #888;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
+}
+
+/* アイコンの色調整 */
+.icon {
+  margin-right: 8px;
+  color: #0077cc;
 }
 
 /* モバイル対応 */
 @media (max-width: 600px) {
+  body {
+    font-size: 16px;
+    /* ★ スマホでも読みやすく */
+  }
+
   header h1 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
   .card {
     padding: 16px;
+    font-size: 1rem;
   }
+}
 
-  /* アイコン */
-  .icon {
-    margin-right: 8px;
-    color: #0077cc;
-  }
+/* アイコン */
+.icon {
+  margin-right: 8px;
+  color: #0077cc;
 }
