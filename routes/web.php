@@ -1,13 +1,20 @@
 <?php
-use App\Http\Controllers\HomebudgetController;
+
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('homebudget.index');
+    return view('welcome');
 });
 
-Route::get('/', [HomebudgetController::class, 'index'])->name('index');
-Route::post('/post', [HomebudgetController::class, 'store'])->name('store');
-Route::get('/edit/{id}', [HomebudgetController::class, 'edit'])->name('homebudget.edit');
-Route::put('/update', [HomebudgetController::class, 'update'])->name('homebudget.update');
-Route::post('/destroy/{id}', [HomebudgetController::class, 'destroy'])->name('homebudget.destroy');
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+});
+
+require __DIR__.'/auth.php';
